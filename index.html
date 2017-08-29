@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my first form</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+    <body style="background-color:#AFEEEE">
+        <header>
+            <nav><p>Easypolls <a href="home.html">Home</a> | <a href="help.html">Help</a> |<a href="login.html">Login</a> | <a href="contacts.html">Contacts</a> | <a href="signup.html">Sign up</a></p></nav>
+            <h1>Free online polls</h1><hr><br>
+        </header>
+        <article>
+             <div><h1>Poll: Are you happy?</h1>
+            <h2>Sign up</h2>
+            <p><b>Start making online polls today</b><p>
+            <form>
+                <label>Name:
+                    <input type="text" id="user-name" required placeholder="Your name here">
+                </label><br>
+                <label>Email:
+                    <input type="email" id="user-email" required placeholder="Your email here">
+                </label><br>
+                <label>Password:
+                    <input type="password" id="user-password" required placeholder="********"> 
+                </label><br><br>
+               <figure>
+                   <img src="img/happygirl.jpg" alt="happy girl">
+                   <figcaption>Giving thanks to God</figcaption>
+                </figure>
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                            <label>Age: 
+                                <input type="number" id="age" name="user-age" value="20" min="12" max="100">
+                            </label><br>
+                            <label>Gender:
+                            </label><br>
+                            <label>Male
+                                <input type="radio" class="gender" name="gender" value="male" checked>
+                            </label>
+                            <label>Female
+                                <input type="radio" class="gender" name="gender" value="female">
+                            </label>
+                            <label>Other
+                                <input type="radio" class="gender" name="gender" value="other">
+                            </label><br>
+                            <label>What do you do?
+                                <select>
+                                    <option class="youdo" value="s">Employed</option>
+                                    <option class="youdo" value="m">Unemployed</option>
+                                    <option class="youdo" value="l">Student</option>
+                                    <option class="youdo" value="xl">Businessman</option>
+                                    <option class="youdo" value="xl">Other</option>  
+                                </select>
+                            </label>
+                    </fieldset><br>
+                    <div><label><b><span style="color:red">1.A</span>re you happy?</b></label><br>
+                        <input type="radio" id="yes" class="happy"  name="happy" value="yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="fairlyhappy" class="happy"  name="happy" value="fairly happy">
+                        <label for="fairlyhappy">Fairly happy</label><br>
+                        <input type="radio" id="fairlyunhappy" class="happy" name="happy" value="fairly unhappy">
+                        <label for="fairlyunhappy">Fairly unhappy</label><br>
+                        <input type="radio" id="nounhappy" class="happy" name="happy " value="no, I'm unhappy">
+                        <label for="nounhappy">No, I'm unhappy </label><br>
+                        <input type="radio" id="other1" class="happy" name="happy" value="other">
+                        <label for="other1">Other</label>
+                        <label><input type="text" class="happy" name="user-comment" placeholder="Your comment here"></label><br></div>
+                    <div> 
+                        <label><b><span style="color:red">2.W</span>hat is the meaning of life?</b></label><br>
+                        <input type="radio" id="happy"  class="meaning" name="meaning" value="happy">
+                        <label for="happy">Being happy</label><br>
+                        <input type="radio" id="family" class="meaning" name="meaning" value="family">
+                        <label for="family">Having a family</label><br>
+                        <input type="radio" id="fun"  class="meaning" name="meaning" value="fun">
+                        <label for="fun">Having fun</label><br>
+                        <input type="radio" id="rich"  class="meaning" name="meaning" value="rich">
+                        <label for="rich">Getting rich</label><br>  
+                        <input type="radio" id="old"  class="meaning" name="meaning" value="old">
+                        <label for="old">Getting old</label><br>  
+                        <input type="radio" id="god"  class="meaning" name="meaning" value="God">
+                        <label for="god">Serving God</label><br>  
+                        <input type="radio" id="friends"  class="meaning" name="meaning" value="friends">
+                        <label for="friends">Having friends</label><br>  
+                        <input type="radio" id="travel"  class="meaning" name="meaning" value="travel">
+                        <label for="travel">To boldy go where no one has gone before</label><br>
+                        <input type="radio" id="other2"  class="meaning" name="other2" value="other2">
+                        <label for="other2">Other</label>
+                        <label><input type="text"  class="meaning" name="user-comment" placeholder="Your comment here"></label><br>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">3.A</span>re you satisfied with your lifestyle?</b></label><br>
+                            <label>Yes
+                                <input type="radio" class="answer" name="answer" value="yes">
+                            </label><br>
+                             <label>No
+                                <input type="radio" class="answer" name="answer" value="no">
+                            </label><br>
+                            <textarea name="textarea" class="answer" name="answer" cols="25" rows="5" placeholder="If no, why not?"></textarea>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">3.W</span>hat One Thing Do You Want to Change about Your Life?</b><br>
+                            <input type="text" id="user-answer" name="user-answer" placeholder="Your answer here">
+                        </label><br>
+                    </div>
+                    <div>
+                        <label><b><span style="color:red">4.W</span>hy are people not satisfied with what they have in life?</b><br>
+                        <textarea name="textarea" id="why" cols="30" rows="12" placeholder="Why are people not satisfied with what they have in life?"></textarea>
+                        </label>
+                    </div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">  
+                <h2 id="thanks" style="display:none;">Thank you!</h2>
+                <h2 id="incorrect" style="display:none;">Form incorrect!</h2>
+            </form>
+        </article><br><hr>
+                 <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+        </div>
+        <div><a href="table.html">Table</a></div>
+          <footer>
+            <p>BBS GmbH<br>Welschdorf 222<br>77761 Schiltach<br>Germany<br></p>
+            <p>Tel.: +49 (0) 78 37 56 - 0<br>Fax: +49 (0) 78 36 52 - 1450</p>
+        </footer>
+</body>
+</html>
+   
